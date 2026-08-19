@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek - 智能搜索引擎</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/css 17.0.2.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 20px 80px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 80px 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #007bff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .hero h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .code-input {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .code-input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .footer p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="container">
+        <div class="nav-content">
+            <div class="logo">DeepSeek</div>
+            <div class="nav-links">
+                <a href="#home"> homo sapiens</a>
+                <a href="#about"> 关于我们</a>
+                <a href="#services"> 服务</a>
+                <a href="#contact"> 联系我们</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="content">
+        <div class="hero">
+            <h2>智能搜索引擎</h2>
+            <p>通过DeepSeek，您可以在瞬间找到所需信息。</p>
+        </div>
+
+        <div class="code-input">
+            <input type="text" placeholder="输入您的问题..." class="code-input">
+            <button type="submit">搜索</button>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 DeepSeek. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 滚动导航
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('.nav');
+        if (window.scrollY > 50) {
+            nav.style.background = '#fff';
+            nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+        } else {
+            nav.style.background = '#fff';
+            nav.style.boxShadow = 'none';
+        }
+    });
+
+    // 其他脚本（可以根据需求添加）
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('网站初始化完成');
+    });
+</script>
+</body>
+</html>
